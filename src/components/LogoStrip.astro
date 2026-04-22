@@ -1,0 +1,25 @@
+---
+const logos = [
+  'Caresyntax',
+  'Waterbear',
+  'rentnbuy',
+  'Neurografica',
+  'Peppe Rosso',
+];
+---
+
+<section class="relative z-10 bg-[#efefef] py-16 md:py-20">
+  <div class="mx-auto max-w-[1240px] px-6">
+    <p class="mb-8 text-[13px] font-medium uppercase tracking-[0.35em] text-[#3a3a44]/50">
+      Proud to work with
+    </p>
+
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+      {logos.map((logo) => (
+        <div class="rounded-[22px] border border-black/8 bg-white/40 px-6 py-7 text-center text-[18px] font-medium text-[#2e2e36] shadow-[0_8px_30px_rgba(0,0,0,0.03)] backdrop-blur-sm">
+          {logo}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

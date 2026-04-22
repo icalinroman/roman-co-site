@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Waterbear | Roman & Co">
+  <Header />
+
+  <main class="bg-[#efefef] pt-10 md:pt-14">
+    <section class="mx-auto max-w-[1880px] px-4 md:px-6">
+      <div class="pt-8 md:pt-10">
+        <!-- top info row -->
+        <div class="border-y border-dotted border-black/35">
+          <div class="grid gap-0 xl:grid-cols-[1.7fr_0.55fr_0.65fr_0.45fr]">
+            <div class="px-0 py-6 md:py-8 xl:pr-8">
+              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#3a3a44]">
+                Case Study 02
+              </p>
+
+              <h1 class="mt-6 text-[46px] font-medium tracking-[-0.04em] text-[#2f2f37] md:text-[64px]">
+                Waterbear
+              </h1>
+            </div>
+
+            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
+              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                Client
+              </p>
+
+              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+                Waterbear,
+                <br />
+                CBD
+                <br />
+                Supplements
+              </p>
+            </div>
+
+            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
+              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                Services
+              </p>
+
+              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+                Packaging Design,
+                <br />
+                Promotional
+                <br />
+                Materials
+              </p>
+            </div>
+
+            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
+              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                Year
+              </p>
+
+              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+                2024
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- hero with 2 large images -->
+        <div class="mt-10 grid gap-4 md:gap-6 xl:grid-cols-[0.48fr_1fr]">
+          <div class="overflow-hidden rounded-[24px] bg-[#d8c7bf]">
+            <div class="flex h-[340px] w-full items-center justify-center bg-[#d8c7bf] text-[26px] text-[#3a3a44] md:h-[520px] xl:h-[760px]">
+              Hero Image Left
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden rounded-[24px] bg-[#d6c0b2]">
+            <div class="absolute left-6 top-6 z-10 text-[42px] font-medium leading-none tracking-[-0.05em] text-white md:left-8 md:top-8 md:text-[72px] xl:text-[96px]">
+              Waterbear
+            </div>
+
+            <div class="flex h-[340px] w-full items-center justify-center bg-[#d6c0b2] text-[26px] text-white/90 md:h-[520px] xl:h-[760px]">
+              Hero Image Right
+            </div>
+          </div>
+        </div>
+
+        <!-- text left + 4 small images right -->
+        <div class="mt-12 grid gap-10 xl:grid-cols-[0.92fr_0.88fr] xl:gap-14">
+          <div>
+            <div class="font-mono-custom text-[24px] leading-[1.35] text-[#3a3a44] md:text-[28px]">
+              <section>
+                <p class="max-w-[780px]">
+                  Waterbear, a wellness brand operating in the CBD and functional supplements space, needed a strong packaging identity that could communicate trust, clarity, and modernity in a highly skeptical market.
+                </p>
+              </section>
+
+              <section class="mt-14">
+                <p class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                  Our Solution
+                </p>
+
+                <div class="max-w-[780px] space-y-4">
+                  <p>
+                    We developed the product packaging and visual identity system from the ground up.
+                  </p>
+
+                  <p>This included:</p>
+
+                  <p>
+                    • Designing packaging that balanced minimalism with regulatory clarity
+                  </p>
+
+                  <p>
+                    • Creating a cohesive color system and product differentiation strategy
+                  </p>
+
+                  <p>
+                    • Developing promotional materials aligned with the brand’s tone and positioning
+                  </p>
+                </div>
+              </section>
+
+              <section class="mt-14">
+                <p class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                  The Result
+                </p>
+
+                <p class="max-w-[780px]">
+                  A cohesive brand presence that elevated product perception, strengthened shelf appeal, and positioned Waterbear as a modern, trustworthy wellness brand.
+                </p>
+              </section>
+            </div>
+          </div>
+
+          <div>
+            <div class="grid grid-cols-2 gap-4 md:gap-6">
+              <div class="overflow-hidden rounded-[22px] bg-[#ebc4ad]">
+                <div class="flex h-[220px] w-full items-center justify-center bg-[#ebc4ad] text-[22px] text-[#3a3a44] md:h-[320px]">
+                  Small Image 01
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-[22px] bg-[#eadfd8]">
+                <div class="flex h-[220px] w-full items-center justify-center bg-[#eadfd8] text-[22px] text-[#3a3a44] md:h-[320px]">
+                  Small Image 02
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-[22px] bg-[#bc6d10]">
+                <div class="flex h-[220px] w-full items-center justify-center bg-[#bc6d10] text-[22px] text-white/90 md:h-[320px]">
+                  Small Image 03
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-[22px] bg-[#d8d1c7]">
+                <div class="flex h-[220px] w-full items-center justify-center bg-[#d8d1c7] text-[22px] text-[#3a3a44] md:h-[320px]">
+                  Small Image 04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 large images below, above footer -->
+        <div class="mt-14 grid gap-4 md:gap-6 xl:grid-cols-2">
+          <div class="overflow-hidden rounded-[24px] bg-[#c48764]">
+            <div class="flex h-[320px] w-full items-center justify-center bg-[#c48764] text-[26px] text-white/90 md:h-[520px] xl:h-[680px]">
+              Large Bottom Image 01
+            </div>
+          </div>
+
+          <div class="overflow-hidden rounded-[24px] bg-[#d0b29f]">
+            <div class="flex h-[320px] w-full items-center justify-center bg-[#d0b29f] text-[26px] text-[#3a3a44] md:h-[520px] xl:h-[680px]">
+              Large Bottom Image 02
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-16 md:mt-20">
+      <Footer />
+    </div>
+  </main>
+</BaseLayout>

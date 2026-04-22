@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import WorkProjectCard from '../components/WorkProjectCard.astro';
+
+const projects = [
+  {
+    title: 'Caresyntax',
+    image: '/caresyntax-work.jpg',
+    href: '/work/caresyntax',
+  },
+  {
+    title: 'Waterbear',
+    image: '/waterbear-work.jpg',
+    href: '/work/waterbear',
+  },
+  {
+    title: 'rentnbuy',
+    image: '/rentnbuy-work.jpg',
+    href: '/work/rentnbuy',
+  },
+  {
+    title: 'Neurografica',
+    image: '/neurografica-work.jpg',
+    href: '/work/neurografica',
+  },
+  {
+    title: 'Pepe Rosso',
+    image: '/pepe-rosso-work.jpg',
+    href: '/work/pepe-rosso',
+  },
+];
+---
+
+<BaseLayout title="Work | Roman & Co">
+  <Header />
+
+  <main class="bg-[#efefef] pb-20 pt-10 md:pb-28 md:pt-14">
+    <section class="mx-auto max-w-[1880px] px-4 md:px-6">
+      <div class="pt-10 text-center md:pt-14">
+        <h1 class="mx-auto max-w-[980px] text-[56px] font-medium uppercase leading-[0.92] tracking-[-0.05em] text-[#2f2f37] md:text-[94px]">
+          Part of our work
+        </h1>
+
+        <p class="font-mono-custom mx-auto mt-5 max-w-[760px] text-[24px] leading-[1.35] text-[#3a3a44] md:text-[30px]">
+          A selection of projects we helped shape through strategy, positioning and execution.
+        </p>
+      </div>
+
+      <div class="mt-14 grid gap-x-5 gap-y-10 md:grid-cols-2">
+        {projects.map((project) => (
+          <WorkProjectCard
+            title={project.title}
+            image={project.image}
+            href={project.href}
+          />
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

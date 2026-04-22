@@ -1,0 +1,317 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import ContactSection from "../components/ContactSection.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="About | Roman & Co">
+    <Header />
+
+    <main class="bg-[#efefef] pt-10 md:pt-14">
+        <section class="mx-auto max-w-[1880px] px-4 md:px-6">
+            <div class="pt-10 md:pt-14">
+                <div class="border-y border-dotted border-black/35">
+                    <div class="grid gap-0 xl:grid-cols-[1.15fr_0.85fr]">
+                        <div class="px-0 py-8 md:py-10 xl:pr-10">
+                            <p
+                                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                            >
+                                About
+                            </p>
+
+                            <h1
+                                class="mt-6 max-w-[900px] text-[52px] font-medium uppercase leading-[0.92] tracking-[-0.05em] text-[#2f2f37] md:text-[92px]"
+                            >
+                                The strategists behind the conversation
+                            </h1>
+                        </div>
+
+                        <div
+                            class="border-l border-dotted border-black/35 px-6 py-8 md:px-8 md:py-10"
+                        >
+                            <p
+                                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                            >
+                                Our Mission
+                            </p>
+
+                            <div
+                                class="font-mono-custom mt-6 max-w-[760px] text-[24px] leading-[1.35] text-[#3a3a44] md:text-[28px]"
+                            >
+                                <p>
+                                    Roman & Co was built on a simple belief:
+                                    marketing should create clarity, not noise.
+                                </p>
+
+                                <p class="mt-5">
+                                    We help brands position themselves
+                                    strategically, communicate with precision,
+                                    and grow through a deep understanding of
+                                    consumer behavior, not trends or short-term
+                                    tactics.
+                                </p>
+
+                                <p class="mt-5">
+                                    Our mission is to build brands that are
+                                    trusted, memorable, and structurally strong
+                                    across industries, stages, and markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-14 grid gap-10 xl:grid-cols-[0.95fr_1.05fr] xl:gap-14"
+                >
+                    <div>
+                        <p
+                            class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                        >
+                            Our Story
+                        </p>
+
+                        <div
+                            class="font-mono-custom mt-6 max-w-[780px] text-[24px] leading-[1.35] text-[#3a3a44] md:text-[28px]"
+                        >
+                            <p>
+                                Roman & Co was created by two brothers with a
+                                shared passion for business, marketing, and
+                                startups.
+                            </p>
+
+                            <p class="mt-5">
+                                After years of working across tech, eCommerce,
+                                healthcare, and retail, from early-stage
+                                startups to global companies, we saw the same
+                                pattern: most brands struggle not because of
+                                execution, but because of positioning and
+                                strategic clarity.
+                            </p>
+
+                            <p class="mt-5">
+                                We founded Roman & Co to bridge that gap.
+                            </p>
+
+                            <p class="mt-5">
+                                By combining behavioral psychology, market
+                                intelligence, and hands-on growth experience, we
+                                work with brands that value long-term strength
+                                over short-term spikes.
+                            </p>
+
+                            <p class="mt-8">
+                                We don’t chase trends.
+                                <br />
+                                We build foundations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-[24px] bg-[#d8e5ef]">
+                        <div
+                            class="flex h-[360px] w-full items-center justify-center bg-[#d8e5ef] text-[26px] text-[#3a3a44] md:h-[560px] xl:h-[760px]"
+                        >
+                            About Page Main Visual
+                        </div>
+                    </div>
+                </div>
+
+                <section class="mt-20">
+                    <div class="grid gap-10 xl:grid-cols-[260px_1fr] xl:gap-10">
+                        <div class="pl-6 md:pl-10 xl:pl-14">
+                            <h2
+                                class="max-w-[210px] text-[52px] font-medium uppercase leading-[0.9] tracking-[-0.05em] text-[#2f2f37] md:text-[64px]"
+                            >
+                                Meet the Team
+                            </h2>
+                        </div>
+
+                        <div class="max-w-[920px]">
+                            <div class="grid gap-6 xl:grid-cols-2">
+                                <article
+                                    class="flex min-h-[760px] flex-col justify-between rounded-[24px] border border-black/5 bg-[#ece8e8] px-7 pb-8 pt-7 md:px-8 md:pb-9 md:pt-8"
+                                >
+                                    <div>
+                                        <div
+                                            class="flex items-start justify-between gap-4"
+                                        >
+                                            <div>
+                                                <h3
+                                                    class="font-mono-custom text-[28px] leading-[1.1] text-[#3a3a44] md:text-[31px]"
+                                                >
+                                                    Călin Roman
+                                                </h3>
+
+                                                <p
+                                                    class="mt-3 text-[18px] font-medium text-[#2f2f37] md:text-[19px]"
+                                                >
+                                                    Head of Strategy
+                                                </p>
+                                            </div>
+
+                                            <div class="text-[#f0b2f5]">
+                                                <svg
+                                                    viewBox="0 0 64 64"
+                                                    class="h-11 w-11"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M22 50H42M32 14C26.4772 14 22 18.4772 22 24C22 28.4183 24.8657 32.1672 28.8333 33.4896V38H25C23.3431 38 22 39.3431 22 41V50H42V41C42 39.3431 40.6569 38 39 38H35.1667V33.4896C39.1343 32.1672 42 28.4183 42 24C42 18.4772 37.5228 14 32 14Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="2.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M27 24H37M27 28H35"
+                                                        stroke="currentColor"
+                                                        stroke-width="2.5"
+                                                        stroke-linecap="round"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="mt-8 border-t border-dashed border-black/35 pt-8"
+                                        >
+                                            <div
+                                                class="font-mono-custom max-w-[355px] text-[18px] leading-[1.42] text-[#3a3a44] md:text-[20px]"
+                                            >
+                                                <p>
+                                                    Călin leads strategy with a
+                                                    strong focus on positioning,
+                                                    consumer psychology, and
+                                                    performance.
+                                                </p>
+
+                                                <p class="mt-6">
+                                                    With experience across tech
+                                                    startups, healthcare,
+                                                    eCommerce, and retail, he
+                                                    combines market intelligence
+                                                    with hands-on execution to
+                                                    design growth systems that
+                                                    are both creative and
+                                                    measurable.
+                                                </p>
+
+                                                <p class="mt-6">
+                                                    He works at the intersection
+                                                    of narrative, data, and
+                                                    behavior.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a
+                                        href="#"
+                                        class="mt-10 inline-flex h-[48px] w-fit items-center rounded-full bg-[#e7a6ee] px-6 text-[17px] font-medium uppercase tracking-[-0.01em] text-[#2d2431] transition hover:opacity-90"
+                                    >
+                                        Linkedin
+                                        <span
+                                            class="ml-2 text-[22px] leading-none"
+                                            >×</span
+                                        >
+                                    </a>
+                                </article>
+
+                                <article
+                                    class="flex min-h-[760px] flex-col justify-between rounded-[24px] border border-black/5 bg-[#ece8e8] px-7 pb-8 pt-7 md:px-8 md:pb-9 md:pt-8"
+                                >
+                                    <div>
+                                        <div
+                                            class="flex items-start justify-between gap-4"
+                                        >
+                                            <div>
+                                                <h3
+                                                    class="font-mono-custom text-[28px] leading-[1.1] text-[#3a3a44] md:text-[31px]"
+                                                >
+                                                    Alex Roman
+                                                </h3>
+
+                                                <p
+                                                    class="mt-3 text-[18px] font-medium text-[#2f2f37] md:text-[19px]"
+                                                >
+                                                    Head of Performance
+                                                </p>
+                                            </div>
+
+                                            <div class="text-[#f0b2f5]">
+                                                <svg
+                                                    viewBox="0 0 64 64"
+                                                    class="h-11 w-11"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M22 46L42 18M42 18H30M42 18V30M22 18L42 46M22 46H34M22 46V34"
+                                                        stroke="currentColor"
+                                                        stroke-width="2.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="mt-8 border-t border-dashed border-black/35 pt-8"
+                                        >
+                                            <div
+                                                class="font-mono-custom max-w-[355px] text-[18px] leading-[1.42] text-[#3a3a44] md:text-[20px]"
+                                            >
+                                                <p>
+                                                    Alex oversees performance
+                                                    strategy and growth systems.
+                                                </p>
+
+                                                <p class="mt-6">
+                                                    He builds and optimizes
+                                                    acquisition funnels, paid
+                                                    campaigns, and tracking
+                                                    infrastructures that drive
+                                                    scalable results. Focused on
+                                                    metrics, experimentation,
+                                                    and efficiency, he ensures
+                                                    every marketing decision is
+                                                    backed by data.
+                                                </p>
+
+                                                <p class="mt-6">
+                                                    Performance is not
+                                                    guesswork. It’s engineering.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a
+                                        href="#"
+                                        class="mt-10 inline-flex h-[48px] w-fit items-center rounded-full bg-[#e7a6ee] px-6 text-[17px] font-medium uppercase tracking-[-0.01em] text-[#2d2431] transition hover:opacity-90"
+                                    >
+                                        Linkedin
+                                        <span
+                                            class="ml-2 text-[22px] leading-none"
+                                            >×</span
+                                        >
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <div class="mt-16 md:mt-20">
+            <ContactSection />
+        </div>
+
+        <Footer />
+    </main>
+</BaseLayout>
