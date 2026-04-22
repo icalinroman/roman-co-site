@@ -42,13 +42,117 @@ body {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(32px);
   transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
+    opacity 0.9s ease,
+    transform 0.9s ease;
+  will-change: opacity, transform;
 }
 
 .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 1s ease;
+  will-change: opacity;
+}
+
+.reveal-fade.revealed {
+  opacity: 1;
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.12s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.24s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.36s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.48s;
+}
+
+.float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.float-medium {
+  animation: floatMedium 9s ease-in-out infinite;
+}
+
+.float-delay-1 {
+  animation-delay: 1s;
+}
+
+.float-delay-2 {
+  animation-delay: 2s;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatMedium {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-fade {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .float-slow,
+  .float-medium {
+    animation: none !important;
+  }
+}
+.reveal-flip {
+  opacity: 0;
+  transform: perspective(1200px) rotateY(-24deg) translateY(18px) scale(0.985);
+  transform-origin: left center;
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+
+.reveal-flip.revealed {
+  opacity: 1;
+  transform: perspective(1200px) rotateY(0deg) translateY(0) scale(1);
+}
+
+.reveal-flip-delay-1 {
+  transition-delay: 0.12s;
+}
+
+.reveal-flip-delay-2 {
+  transition-delay: 0.24s;
+}
+
+.reveal-flip-delay-3 {
+  transition-delay: 0.36s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-flip {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

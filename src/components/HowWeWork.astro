@@ -30,18 +30,26 @@ const steps = [
 <section class="relative bg-[#efefef] py-20 md:py-24" id="about">
   <div class="mx-auto max-w-[1240px] px-6">
     <div class="mb-12 max-w-[760px]">
-      <p class="mb-4 text-[13px] font-medium uppercase tracking-[0.35em] text-[#3a3a44]/50">
+      <p class="reveal-fade mb-4 text-[13px] font-medium uppercase tracking-[0.35em] text-[#3a3a44]/50">
         How we work with brands
       </p>
 
-      <h2 class="text-[38px] font-bold uppercase leading-[0.95] tracking-[-0.04em] text-[#2c2c35] md:text-[58px]">
+      <h2 class="reveal text-[38px] font-bold uppercase leading-[0.95] tracking-[-0.04em] text-[#2c2c35] md:text-[58px]">
         Strategy built for real market behaviour
       </h2>
     </div>
 
     <div class="grid gap-5 md:grid-cols-2">
-      {steps.map((step) => (
-        <article class="rounded-[28px] border border-black/8 bg-[#f6f4f4]/90 p-7 shadow-[0_10px_35px_rgba(0,0,0,0.04)] md:p-8">
+      {steps.map((step, index) => (
+        <article
+          class={`reveal rounded-[28px] border border-black/8 bg-[#f6f4f4]/90 p-7 shadow-[0_10px_35px_rgba(0,0,0,0.04)] md:p-8 ${
+            index === 1 ? 'reveal-delay-1' : ''
+          } ${
+            index === 2 ? 'reveal-delay-2' : ''
+          } ${
+            index === 3 ? 'reveal-delay-3' : ''
+          }`}
+        >
           <div class="mb-5 flex items-center justify-between">
             <span class="text-[13px] font-medium uppercase tracking-[0.28em] text-[#2f2f37]/45">
               {step.number}

@@ -7,7 +7,7 @@ const studies = [
     value2: '30k+',
     label2: 'Generated Leads At\nCompetitive CPLs',
     tags: ['Paid Ads', 'Performance', 'Strategy'],
-    image: '/neurografica-case.png',
+    image: '/neurografica-case.jpg',
     alt: 'Neurografica case study',
   },
   {
@@ -37,15 +37,15 @@ const studies = [
   <div class="mx-auto max-w-[1320px] px-6">
     <div class="grid items-start gap-14 xl:grid-cols-[0.78fr_1.22fr]">
       <div class="xl:sticky xl:top-28">
-        <h2 class="max-w-[620px] text-[35px] font-bold uppercase leading-[0.95] tracking-[-0.045em] text-[#2c2c35] md:text-[50px]">
+        <h2 class="reveal max-w-[620px] text-[48px] font-bold uppercase leading-[0.95] tracking-[-0.045em] text-[#2c2c35] md:text-[72px]">
           From local brands to c-series global start-ups
         </h2>
 
-        <p class="font-mono-custom mt-10 max-w-[620px] text-[20px] leading-[1.45] text-[#3a3a44] md:text-[21px]">
+        <p class="font-mono-custom reveal reveal-delay-1 mt-10 max-w-[620px] text-[20px] leading-[1.45] text-[#3a3a44] md:text-[21px]">
           We’ve worked with brands of all sizes — from early-stage tech startups to established eCommerce and retail companies. Across industries and growth stages, our focus remains the same: building clear positioning, aligning strategy with real consumer behavior, and executing across channels in a way that drives sustainable growth.
         </p>
 
-        <div class="mt-10">
+        <div class="reveal reveal-delay-2 mt-10">
           <a
             href="#contact"
             class="inline-flex h-[54px] items-center rounded-full bg-[#e9a8ef] px-10 text-[16px] font-semibold uppercase tracking-[0.02em] text-[#2d2431] transition hover:scale-[1.02] hover:opacity-95"
@@ -55,9 +55,15 @@ const studies = [
         </div>
       </div>
 
-      <div class="space-y-8">
-        {studies.map((study) => (
-          <article class="group overflow-hidden rounded-[26px] border border-black/8 bg-[#f4f1f1] shadow-[0_14px_40px_rgba(0,0,0,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(0,0,0,0.08)]">
+      <div class="space-y-8 [perspective:1400px]">
+        {studies.map((study, index) => (
+          <article
+            class={`reveal-flip group overflow-hidden rounded-[26px] border border-black/8 bg-[#f4f1f1] shadow-[0_14px_40px_rgba(0,0,0,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(0,0,0,0.08)] ${
+              index === 1 ? 'reveal-flip-delay-1' : ''
+            } ${
+              index === 2 ? 'reveal-flip-delay-2' : ''
+            }`}
+          >
             <div class="grid xl:grid-cols-[0.95fr_0.8fr]">
               <div class="p-6 md:p-8">
                 <div class="font-mono-custom text-[20px] text-[#35353d] md:text-[24px]">
