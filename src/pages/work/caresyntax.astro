@@ -1,7 +1,7 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
 <BaseLayout title="Caresyntax | Roman & Co">
@@ -13,21 +13,31 @@ import Footer from '../../components/Footer.astro';
         <div class="border-y border-dotted border-black/35">
           <div class="grid gap-0 xl:grid-cols-[1.7fr_0.5fr_0.6fr_0.55fr]">
             <div class="px-0 py-6 md:py-8 xl:pr-8">
-              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#3a3a44]">
+              <p
+                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#3a3a44]"
+              >
                 Case Study 01
               </p>
 
-              <h1 class="mt-6 text-[46px] font-medium tracking-[-0.04em] text-[#2f2f37] md:text-[64px]">
+              <h1
+                class="mt-6 text-[46px] font-medium tracking-[-0.04em] text-[#2f2f37] md:text-[64px]"
+              >
                 Caresyntax
               </h1>
             </div>
 
-            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
-              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+            <div
+              class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8"
+            >
+              <p
+                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+              >
                 Client
               </p>
 
-              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+              <p
+                class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]"
+              >
                 VC Backed
                 <br />
                 Healthtech
@@ -36,12 +46,18 @@ import Footer from '../../components/Footer.astro';
               </p>
             </div>
 
-            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
-              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+            <div
+              class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8"
+            >
+              <p
+                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+              >
                 Services
               </p>
 
-              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+              <p
+                class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]"
+              >
                 PR & Performance,
                 <br />
                 Board Positioning,
@@ -50,12 +66,18 @@ import Footer from '../../components/Footer.astro';
               </p>
             </div>
 
-            <div class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8">
-              <p class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+            <div
+              class="border-l border-dotted border-black/35 px-6 py-6 md:px-8 md:py-8"
+            >
+              <p
+                class="text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+              >
                 Year
               </p>
 
-              <p class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]">
+              <p
+                class="font-mono-custom mt-6 text-[24px] leading-[1.2] text-[#3a3a44] md:text-[28px]"
+              >
                 2023-2025
               </p>
             </div>
@@ -63,75 +85,102 @@ import Footer from '../../components/Footer.astro';
         </div>
 
         <div class="mt-10 overflow-hidden rounded-[24px] bg-[#cfd8e3]">
-          <div class="flex h-[340px] w-full items-center justify-center bg-[#cfd8e3] text-[28px] text-[#3a3a44] md:h-[520px] xl:h-[760px]">
-            Caresyntax Hero Video
-          </div>
+          <video
+            class="block h-[340px] w-full object-cover md:h-[520px] xl:h-[760px]"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="/caresyntax-hero.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div class="mt-10 grid gap-10 xl:grid-cols-[0.95fr_0.9fr] xl:gap-12">
           <div>
-            <div class="font-mono-custom text-[24px] leading-[1.35] text-[#3a3a44] md:text-[28px]">
+            <div
+              class="font-mono-custom text-[20px] leading-[1.35] text-[#3a3a44] md:text-[23px]"
+            >
               <section>
-                <p class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                <p
+                  class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                >
                   Challenge
                 </p>
 
                 <p class="max-w-[760px]">
-                  Caresyntax, a $350M+ global AI healthcare company, needed stronger executive positioning and a clear, consistent narrative across international markets.
-                  The goal was to elevate leadership visibility and align communication with investor, policy, and global innovation audiences.
+                  Caresyntax, a $350M+ global AI healthcare company, needed
+                  stronger executive positioning and a clear, consistent
+                  narrative across international markets. The goal was to
+                  elevate leadership visibility and align communication with
+                  investor, policy, and global innovation audiences.
                 </p>
               </section>
 
               <section class="mt-14">
-                <p class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                <p
+                  class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                >
                   Our Solution
                 </p>
 
-                <div class="max-w-[760px] space-y-4">
+                <div class="max-w-[780px] space-y-4 text-[20px] md:text-[23px]">
                   <p>
-                    We built and executed an executive-led communication strategy, including:
+                    We built and executed an executive-led communication
+                    strategy, including:
+                  </p>
+
+                  <p>• Strategic LinkedIn positioning for board members</p>
+
+                  <p>
+                    • Keynote development for global forums such as the World
+                    Economic Forum and Qatar Economic Forum
                   </p>
 
                   <p>
-                    • Strategic LinkedIn positioning for board members
-                  </p>
-
-                  <p>
-                    • Keynote development for global forums such as the World Economic Forum and Qatar Economic Forum
-                  </p>
-
-                  <p>
-                    • Coordination of high-impact visibility campaigns, including Times Square activations and Nasdaq appearances
+                    • Coordination of high-impact visibility campaigns,
+                    including Times Square activations and Nasdaq appearances
                   </p>
                 </div>
               </section>
 
               <section class="mt-14">
-                <p class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]">
+                <p
+                  class="mb-5 font-sans text-[18px] font-medium uppercase tracking-[0.01em] text-[#7b7b7b]"
+                >
                   The Result
                 </p>
 
                 <p class="max-w-[760px]">
-                  Strengthened executive authority, clearer global positioning, and elevated brand credibility across international platforms.
+                  Strengthened executive authority, clearer global positioning,
+                  and elevated brand credibility across international platforms.
                 </p>
               </section>
             </div>
 
             <div class="mt-16 grid max-w-[560px] grid-cols-2 gap-8 md:gap-12">
               <div>
-                <div class="text-[58px] font-medium leading-none tracking-[-0.05em] text-[#2f2f37] md:text-[82px]">
+                <div
+                  class="text-[58px] font-medium leading-none tracking-[-0.05em] text-[#2f2f37] md:text-[82px]"
+                >
                   12M+
                 </div>
-                <p class="mt-3 max-w-[220px] text-[24px] font-medium leading-[1.08] tracking-[-0.03em] text-[#3a3a44]">
+                <p
+                  class="mt-3 max-w-[220px] text-[24px] font-medium leading-[1.08] tracking-[-0.03em] text-[#3a3a44]"
+                >
                   Impact On Target Audience
                 </p>
               </div>
 
               <div>
-                <div class="text-[58px] font-medium leading-none tracking-[-0.05em] text-[#2f2f37] md:text-[82px]">
+                <div
+                  class="text-[58px] font-medium leading-none tracking-[-0.05em] text-[#2f2f37] md:text-[82px]"
+                >
                   35+
                 </div>
-                <p class="mt-3 max-w-[220px] text-[24px] font-medium leading-[1.08] tracking-[-0.03em] text-[#3a3a44]">
+                <p
+                  class="mt-3 max-w-[220px] text-[24px] font-medium leading-[1.08] tracking-[-0.03em] text-[#3a3a44]"
+                >
                   Global Conferences
                 </p>
               </div>
@@ -139,23 +188,29 @@ import Footer from '../../components/Footer.astro';
 
             <div class="mt-12 grid max-w-[620px] grid-cols-2 gap-4 md:gap-5">
               <div class="overflow-hidden rounded-[22px] bg-[#d7dde5]">
-                <div class="flex h-[240px] w-full items-center justify-center bg-[#d7dde5] text-[22px] text-[#3a3a44] md:h-[430px]">
-                  Small Image 01
-                </div>
+                <img
+                  src="/caresyntax-small-1.jpg"
+                  alt="Caresyntax visual 2"
+                  class="block h-[240px] w-full object-cover md:h-[430px]"
+                />
               </div>
 
               <div class="overflow-hidden rounded-[22px] bg-[#d7dde5]">
-                <div class="flex h-[240px] w-full items-center justify-center bg-[#d7dde5] text-[22px] text-[#3a3a44] md:h-[430px]">
-                  Small Image 02
-                </div>
+                <img
+                  src="/billboard-section.jpg"
+                  alt="Caresyntax visual 1"
+                  class="block h-[240px] w-full object-cover md:h-[430px]"
+                />
               </div>
             </div>
           </div>
 
           <div class="overflow-hidden rounded-[24px] bg-[#d8e5ef]">
-            <div class="flex h-full min-h-[420px] w-full items-center justify-center bg-[#d8e5ef] text-[28px] text-[#3a3a44] xl:min-h-[1500px]">
-              Caresyntax Side Image
-            </div>
+            <img
+              src="/caresyntax-case.jpg"
+              alt="Caresyntax campaign visual"
+              class="block h-full min-h-[420px] w-full object-cover xl:min-h-[1500px]"
+            />
           </div>
         </div>
       </div>

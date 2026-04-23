@@ -1,23 +1,35 @@
 ---
 interface Props {
   title: string;
-  image: string;
   href: string;
+  image?: string;
+  video?: string;
 }
 
-const { title, image, href } = Astro.props;
+const { title, image, video, href } = Astro.props;
 ---
 
-<a
-  href={href}
-  class="group block"
->
+<a href={href} class="group block">
   <div class="overflow-hidden rounded-[26px] bg-[#ddd]">
-    <img
-      src={image}
-      alt={title}
-      class="h-[320px] w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[430px] xl:h-[520px]"
-    />
+    {
+      video ? (
+        <video
+          class="h-[320px] w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[430px] xl:h-[520px]"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+      ) : (
+        <img
+          src={image}
+          alt={title}
+          class="h-[320px] w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[430px] xl:h-[520px]"
+        />
+      )
+    }
   </div>
 
   <div class="pt-3">

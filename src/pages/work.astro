@@ -3,30 +3,37 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import WorkProjectCard from '../components/WorkProjectCard.astro';
 
-const projects = [
+type Project = {
+  title: string;
+  href: string;
+  image?: string;
+  video?: string;
+};
+
+const projects: Project[] = [
   {
     title: 'Caresyntax',
-    image: '/caresyntax-work.jpg',
+    video: '/caresyntax-hero.mp4',
     href: '/work/caresyntax',
   },
   {
     title: 'Waterbear',
-    image: '/waterbear-work.jpg',
+    video: '/waterbear-hero.mp4',
     href: '/work/waterbear',
   },
   {
     title: 'rentnbuy',
-    image: '/rentnbuy-work.jpg',
+    video: '/rentnbuy-hero.mp4',
     href: '/work/rentnbuy',
   },
   {
     title: 'Neurografica',
-    image: '/neurografica-work.jpg',
+    video: '/neurografica-hero.mp4',
     href: '/work/neurografica',
   },
   {
     title: 'Pepe Rosso',
-    image: '/pepe-rosso-work.jpg',
+    video: '/pepe-rosso-hero.mp4',
     href: '/work/pepe-rosso',
   },
 ];
@@ -52,6 +59,7 @@ const projects = [
           <WorkProjectCard
             title={project.title}
             image={project.image}
+            video={project.video}
             href={project.href}
           />
         ))}
