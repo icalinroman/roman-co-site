@@ -1,17 +1,22 @@
 <section id="contact" class="bg-[#efefef] pb-20 md:pb-28">
   <div class="mx-auto max-w-[1880px] px-4 md:px-6">
-    <div class="rounded-[22px] bg-[#e3a6e8] px-6 py-8 md:px-10 md:py-10 xl:px-12 xl:py-12">
+    <div
+      class="rounded-[22px] bg-[#e3a6e8] px-6 py-8 md:px-10 md:py-10 xl:px-12 xl:py-12"
+    >
       <div class="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] xl:gap-14">
-        
         <div class="flex items-start">
-          <h2 class="max-w-[620px] text-[54px] font-medium uppercase leading-[0.92] tracking-[-0.05em] text-[#2f2f37] md:text-[82px] xl:text-[92px]">
+          <h2
+            class="max-w-[620px] text-[54px] font-medium uppercase leading-[0.92] tracking-[-0.05em] text-[#2f2f37] md:text-[82px] xl:text-[92px]"
+          >
             Let’s craft your brand strategy
           </h2>
         </div>
 
         <div class="relative">
           <div class="absolute right-0 top-0 hidden md:block">
-            <div class="flex h-12 w-12 items-center justify-center text-[#2f2f37]">
+            <div
+              class="flex h-12 w-12 items-center justify-center text-[#2f2f37]"
+            >
               <svg
                 viewBox="0 0 64 64"
                 class="h-11 w-11"
@@ -19,64 +24,128 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <rect x="16" y="12" width="32" height="40" rx="2" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M22 20H42" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M22 26H42" stroke="currentColor" stroke-width="2.5"/>
-                <rect x="24" y="31" width="16" height="12" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M29 37L31 39L35 35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 18V54" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M52 18V54" stroke="currentColor" stroke-width="2.5"/>
+                <rect
+                  x="16"
+                  y="12"
+                  width="32"
+                  height="40"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2.5"></rect>
+                <path d="M22 20H42" stroke="currentColor" stroke-width="2.5"
+                ></path>
+                <path d="M22 26H42" stroke="currentColor" stroke-width="2.5"
+                ></path>
+                <rect
+                  x="24"
+                  y="31"
+                  width="16"
+                  height="12"
+                  rx="1.5"
+                  stroke="currentColor"
+                  stroke-width="2.5"></rect>
+                <path
+                  d="M29 37L31 39L35 35"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M12 18V54" stroke="currentColor" stroke-width="2.5"
+                ></path>
+                <path d="M52 18V54" stroke="currentColor" stroke-width="2.5"
+                ></path>
               </svg>
             </div>
           </div>
 
-          <form class="max-w-[720px] pt-2 md:pt-0">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="max-w-[720px] pt-2 md:pt-0"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="7de330c0-7ca1-4e70-8c55-b99e3984a2ad"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New contact form submission from Roman & Co"
+            />
+            <input type="hidden" name="from_name" value="Roman & Co Website" />
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none;"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <label for="firstName" class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]">
+                <label
+                  for="firstName"
+                  class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]"
+                >
                   First Name *
                 </label>
                 <input
                   id="firstName"
                   name="firstName"
                   type="text"
+                  required
                   class="h-[52px] w-full border-0 border-b border-[#2f2f37]/70 bg-transparent px-0 text-[18px] text-[#2f2f37] outline-none focus:border-[#2f2f37]"
                 />
               </div>
 
               <div>
-                <label for="lastName" class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]">
+                <label
+                  for="lastName"
+                  class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]"
+                >
                   Last Name *
                 </label>
                 <input
                   id="lastName"
                   name="lastName"
                   type="text"
+                  required
                   class="h-[52px] w-full border-0 border-b border-[#2f2f37]/70 bg-transparent px-0 text-[18px] text-[#2f2f37] outline-none focus:border-[#2f2f37]"
                 />
               </div>
             </div>
 
             <div class="mt-5">
-              <label for="email" class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]">
+              <label
+                for="email"
+                class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]"
+              >
                 Email *
               </label>
               <input
                 id="email"
                 name="email"
                 type="email"
+                required
                 class="h-[52px] w-full border-0 border-b border-[#2f2f37]/70 bg-transparent px-0 text-[18px] text-[#2f2f37] outline-none focus:border-[#2f2f37]"
               />
             </div>
 
             <div class="mt-5">
-              <label for="message" class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]">
-                Message
+              <label
+                for="message"
+                class="mb-3 block text-[15px] font-medium uppercase tracking-[0.02em] text-[#2f2f37]"
+              >
+                Message *
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows="3"
+                required
                 class="w-full resize-none border-0 border-b border-[#2f2f37]/70 bg-transparent px-0 py-2 text-[18px] text-[#2f2f37] outline-none focus:border-[#2f2f37]"
               ></textarea>
             </div>
@@ -91,7 +160,6 @@
             </div>
           </form>
         </div>
-
       </div>
     </div>
   </div>
