@@ -1,0 +1,46 @@
+---
+const deliverables = [
+  'O idee de software clar definită.',
+  'Un public țintă ales corect.',
+  'O problemă formulată comercial, nu doar tehnic.',
+  'Un proces de validare aplicat pe ideea ta.',
+  'Un landing page sau o pagină de prezentare pentru produs.',
+  'Un MVP sau prototip construit cu AI și no-code.',
+  'Un mesaj de vânzare clar.',
+  'O strategie de lansare pentru primii utilizatori.',
+  'Template-uri de interviuri cu potențiali clienți.',
+  'Scripturi de outreach.',
+  'Framework-uri pentru poziționare.',
+  'Checklist pentru MVP.',
+];
+---
+
+<section class="program-page program-section">
+  <div class="program-container">
+    <div class="reveal-soft mb-12 max-w-[860px]">
+      <p class="program-kicker mb-4">Ce primești concret</p>
+      <h2 class="program-heading-lg">
+        Până la finalul programului, vei avea claritate, direcție și un produs testabil
+      </h2>
+      <p class="program-text mt-5 max-w-[760px]">
+        Scopul programului nu este să ieși cu mai multe idei în cap, ci cu un proces aplicat pe ideea ta și cu o bază reală pentru lansare.
+      </p>
+    </div>
+
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {deliverables.map((item, index) => (
+        <article class={`program-card reveal-soft p-6 md:p-7 ${index % 3 === 1 ? 'program-delay-1' : ''} ${index % 3 === 2 ? 'program-delay-2' : ''}`}>
+          <div class="flex items-start gap-4">
+            <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#ede9fe] text-[14px] font-extrabold text-[#6d28d9]">
+              +
+            </div>
+
+            <p class="text-[18px] leading-[1.55] text-[#111827]/84 md:text-[20px]">
+              {item}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

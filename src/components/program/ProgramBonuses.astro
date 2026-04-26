@@ -1,0 +1,56 @@
+---
+const bonuses = [
+  {
+    title: 'Software Idea Validation Kit',
+    text: 'Un set de întrebări, template-uri și criterii prin care testezi dacă ideea ta are potențial comercial.',
+  },
+  {
+    title: 'MVP Builder Checklist',
+    text: 'Un checklist care te ajută să decizi ce intră în prima versiune și ce lași pentru mai târziu.',
+  },
+  {
+    title: 'Landing Page Template',
+    text: 'Un template adaptat pentru produse digitale, tool-uri, SaaS-uri și aplicații.',
+  },
+  {
+    title: 'Scripturi de outreach',
+    text: 'Mesaje pe care le poți folosi pentru feedback, call-uri, utilizatori beta sau primii clienți.',
+  },
+  {
+    title: 'Ghid de lucru cu programatorii',
+    text: 'Ce trebuie să știi înainte să vorbești cu un developer și cum eviți costurile inutile.',
+  },
+];
+---
+
+<section class="program-page program-section">
+  <div class="program-container">
+    <div class="reveal-soft mb-12 max-w-[860px]">
+      <p class="program-kicker mb-4">Bonusuri</p>
+      <h2 class="program-heading-lg">
+        Pentru prima grupă, primești și
+      </h2>
+      <p class="program-text mt-5 max-w-[760px]">
+        Am inclus bonusuri care scurtează drumul dintre idee, validare și prima versiune testabilă.
+      </p>
+    </div>
+
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {bonuses.map((bonus, index) => (
+        <article class={`program-card reveal-soft p-6 md:p-7 ${index % 3 === 1 ? 'program-delay-1' : ''} ${index % 3 === 2 ? 'program-delay-2' : ''}`}>
+          <p class="text-[13px] font-bold uppercase tracking-[0.12em] text-[#6d28d9]">
+            Bonus {index + 1}
+          </p>
+
+          <h3 class="mt-4 text-[24px] font-extrabold leading-[1.15] tracking-[-0.03em] text-[#111827] md:text-[30px]">
+            {bonus.title}
+          </h3>
+
+          <p class="program-text-sm mt-5">
+            {bonus.text}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

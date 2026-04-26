@@ -1,0 +1,68 @@
+---
+import ProgramLayout from '../layouts/ProgramLayout.astro';
+import ProgramHero from '../components/program/ProgramHero.astro';
+import ProgramAudience from '../components/program/ProgramAudience.astro';
+import ProgramOpportunity from '../components/program/ProgramOpportunity.astro';
+import ProgramProblem from '../components/program/ProgramProblem.astro';
+import ProgramSolution from '../components/program/ProgramSolution.astro';
+import ProgramMethod from '../components/program/ProgramMethod.astro';
+import ProgramDeliverables from '../components/program/ProgramDeliverables.astro';
+import ProgramCreator from '../components/program/ProgramCreator.astro';
+import ProgramOffer from '../components/program/ProgramOffer.astro';
+import ProgramBonuses from '../components/program/ProgramBonuses.astro';
+import ProgramFAQ from '../components/program/ProgramFAQ.astro';
+import ProgramWarning from '../components/program/ProgramWarning.astro';
+import ProgramFinalCTA from '../components/program/ProgramFinalCTA.astro';
+import ProgramFooter from '../components/program/ProgramFooter.astro';
+---
+
+<ProgramLayout title="Transformă expertiza ta într-un software validat">
+  <main>
+    <ProgramHero />
+    <ProgramAudience />
+    <ProgramOpportunity />
+    <ProgramProblem />
+    <ProgramSolution />
+    <ProgramMethod />
+    <ProgramDeliverables />
+    <ProgramCreator />
+    <ProgramOffer />
+    <ProgramBonuses />
+    <ProgramFAQ />
+    <ProgramWarning />
+    <ProgramFinalCTA />
+  </main>
+
+  <ProgramFooter />
+
+  <script>
+    const initReveal = () => {
+      const elements = document.querySelectorAll('.reveal-soft');
+
+      if (!elements.length) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -30px 0px',
+        }
+      );
+
+      elements.forEach((el) => observer.observe(el));
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initReveal);
+    } else {
+      initReveal();
+    }
+  </script>
+</ProgramLayout>

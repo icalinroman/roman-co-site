@@ -1,0 +1,51 @@
+---
+const faqs = [
+  {
+    q: 'Trebuie să știu programare?',
+    a: 'Nu. Programul este construit pentru oameni non-tehnici. Vei învăța cum să folosești AI, no-code și un proces clar pentru a ajunge la o primă versiune validabilă.',
+  },
+  {
+    q: 'Dacă nu am încă o idee clară?',
+    a: 'Este în regulă. Prima parte a programului te ajută să identifici oportunități reale din expertiza ta și să alegi o idee cu sens comercial.',
+  },
+  {
+    q: 'Voi construi un software complet?',
+    a: 'Nu acesta este obiectivul. Scopul este să ajungi la o versiune testabilă, clară și suficient de bună pentru feedback real din piață.',
+  },
+  {
+    q: 'Este un curs de AI?',
+    a: 'Nu. AI-ul este o unealtă din proces. Programul este despre validare, produs, poziționare, MVP, marketing și lansare.',
+  },
+  {
+    q: 'Este potrivit dacă am deja un business?',
+    a: 'Da. Este foarte potrivit pentru antreprenori, consultanți sau specialiști care vor să transforme un proces, o metodă sau o problemă recurentă într-un activ digital.',
+  },
+];
+---
+
+<section id="faq" class="program-page program-section">
+  <div class="program-container">
+    <div class="reveal-soft mb-12 max-w-[760px]">
+      <p class="program-kicker mb-4">Întrebări frecvente</p>
+      <h2 class="program-heading-lg">
+        FAQ
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((item, index) => (
+        <article class={`program-card reveal-soft p-6 md:p-8 ${index === 1 ? 'program-delay-1' : ''} ${index === 2 ? 'program-delay-2' : ''}`}>
+          <div class="grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
+            <h3 class="text-[22px] font-extrabold leading-[1.25] tracking-[-0.02em] text-[#111827] md:text-[28px]">
+              {item.q}
+            </h3>
+
+            <p class="program-text">
+              {item.a}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

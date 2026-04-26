@@ -1,0 +1,69 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Identificarea oportunității',
+    text:
+      'Extragi idei bune din expertiza ta, nu din trenduri superficiale. Analizezi probleme reale, procese repetitive, publicuri posibile și oportunități de monetizare.',
+  },
+  {
+    number: '02',
+    title: 'Validarea ideii',
+    text:
+      'Testezi interesul pieței înainte să construiești. Folosești interviuri, formulare, outreach, landing page-uri, feedback direct și semnale de intenție.',
+  },
+  {
+    number: '03',
+    title: 'Construirea MVP-ului',
+    text:
+      'Creezi o primă versiune suficient de clară încât să poată fi testată. Scopul nu este perfecțiunea, ci viteza de învățare și validare.',
+  },
+  {
+    number: '04',
+    title: 'Lansarea și promovarea',
+    text:
+      'Clarifici poziționarea, mesajul, oferta și structura paginii. Înveți cum să atragi primii utilizatori și cum să obții primele reacții reale din piață.',
+  },
+  {
+    number: '05',
+    title: 'Creșterea produsului',
+    text:
+      'Interpretezi feedbackul, prioritizezi îmbunătățirile, testezi prețul și decizi când merită să investești într-o etapă de dezvoltare mai serioasă.',
+  },
+];
+---
+
+<section id="method" class="program-page program-section">
+  <div class="program-container">
+    <div class="reveal-soft mb-12 max-w-[860px]">
+      <p class="program-kicker mb-4">Metoda</p>
+      <h2 class="program-heading-lg">
+        Vei lucra pe un proces în 5 etape
+      </h2>
+      <p class="program-text mt-5 max-w-[760px]">
+        Programul îți oferă un cadru clar de lucru, astfel încât să nu sari direct
+        în dezvoltare și să nu pierzi luni întregi construind ceva ce piața nu cere.
+      </p>
+    </div>
+
+    <div class="space-y-5">
+      {steps.map((step, index) => (
+        <article class={`program-card reveal-soft p-7 md:p-8 ${index === 1 ? 'program-delay-1' : ''} ${index === 2 ? 'program-delay-2' : ''} ${index === 3 ? 'program-delay-1' : ''} ${index === 4 ? 'program-delay-2' : ''}`}>
+          <div class="grid gap-6 lg:grid-cols-[90px_280px_1fr] lg:items-start">
+            <div class="text-[28px] font-extrabold tracking-[-0.03em] text-[#6d28d9]">
+              {step.number}
+            </div>
+
+            <h3 class="text-[24px] font-extrabold leading-[1.1] tracking-[-0.03em] text-[#111827] md:text-[30px]">
+              {step.title}
+            </h3>
+
+            <p class="program-text max-w-[840px]">
+              {step.text}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

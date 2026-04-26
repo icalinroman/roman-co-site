@@ -1,0 +1,38 @@
+---
+const audience = [
+  'Ai expertiză într-un domeniu și observi probleme repetitive care pot fi rezolvate prin software.',
+  'Ai o idee de aplicație, tool, platformă sau produs digital, dar nu știi cum să o structurezi corect.',
+  'Nu ești programator și vrei să înțelegi cum poți începe fără o echipă tehnică mare și costisitoare.',
+  'Vrei să validezi ideea înainte să investești timp, bani și energie în dezvoltare.',
+  'Vrei să construiești un produs real, nu doar să consumi informație despre AI și no-code.',
+  'Vrei un proces clar care leagă problema, produsul, MVP-ul, marketingul și primii utilizatori.',
+];
+---
+
+<section id="for-whom" class="program-page program-section">
+  <div class="program-container">
+    <div class="reveal-soft mb-12 max-w-[760px]">
+      <p class="program-kicker mb-4">Pentru cine este programul</p>
+      <h2 class="program-heading-lg">
+        Creat pentru oameni care înțeleg problema înainte de tehnologie
+      </h2>
+      <p class="program-text mt-5 max-w-[720px]">
+        Programul este gândit pentru oameni care nu pornesc de la cod, ci de la
+        o observație reală din piață și vor să transforme acea observație într-un produs.
+      </p>
+    </div>
+
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {audience.map((item, index) => (
+        <article class={`program-card reveal-soft program-number-card ${index === 1 ? 'program-delay-1' : ''} ${index === 2 ? 'program-delay-2' : ''} ${index === 3 ? 'program-delay-1' : ''} ${index === 4 ? 'program-delay-2' : ''} ${index === 5 ? 'program-delay-3' : ''}`}>
+          <div class="program-number">
+            0{index + 1}
+          </div>
+          <p class="text-[20px] leading-[1.45] text-[#111827]/88">
+            {item}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
