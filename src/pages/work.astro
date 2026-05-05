@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import WorkProjectCard from '../components/WorkProjectCard.astro';
 
 type Project = {
@@ -31,11 +32,6 @@ const projects: Project[] = [
     video: '/neurografica-hero.mp4',
     href: '/work/neurografica',
   },
-  {
-    title: 'Pepe Rosso',
-    video: '/pepe-rosso-hero.mp4',
-    href: '/work/pepe-rosso',
-  },
 ];
 ---
 
@@ -65,5 +61,7 @@ const projects: Project[] = [
         ))}
       </div>
     </section>
+
+    <Footer />
   </main>
 </BaseLayout>

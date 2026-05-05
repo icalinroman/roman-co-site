@@ -4,20 +4,9 @@ const pathname = Astro.url.pathname;
 const isWorkPage =
   pathname === '/work' || pathname.startsWith('/work/');
 
-const isCaresyntax = pathname === '/work/caresyntax';
-const isWaterbear = pathname === '/work/waterbear';
-const isRentnbuy = pathname === '/work/rentnbuy';
-const isNeurografica = pathname === '/work/neurografica';
-const isPepeRosso = pathname === '/work/pepe-rosso';
-
 const navLinkClass = (active: boolean) =>
   `text-[15px] uppercase transition hover:opacity-70 ${
     active ? 'font-semibold text-[#2b2b33]' : 'font-medium text-[#2b2b33]/65'
-  }`;
-
-const dropdownLinkClass = (active: boolean) =>
-  `block text-[15px] transition hover:opacity-60 ${
-    active ? 'font-semibold text-[#2b2b33]' : 'font-normal text-[#2b2b33]'
   }`;
 ---
 
@@ -29,37 +18,9 @@ const dropdownLinkClass = (active: boolean) =>
       </a>
 
       <nav class="flex items-center gap-8">
-        <div class="group relative">
-          <a
-            href="/work"
-            class={`flex items-center gap-1 ${navLinkClass(isWorkPage)}`}
-          >
-            Work
-            <span class="text-[12px]">⌄</span>
-          </a>
-
-          <div class="pointer-events-none absolute left-0 top-full pt-2 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-            <div class="min-w-[190px] rounded-[18px] bg-[#f5f2f2] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-              <div class="space-y-2">
-                <a href="/work/caresyntax" class={dropdownLinkClass(isCaresyntax)}>
-                  Caresyntax
-                </a>
-                <a href="/work/waterbear" class={dropdownLinkClass(isWaterbear)}>
-                  Waterbear
-                </a>
-                <a href="/work/rentnbuy" class={dropdownLinkClass(isRentnbuy)}>
-                  rentnbuy
-                </a>
-                <a href="/work/neurografica" class={dropdownLinkClass(isNeurografica)}>
-                  Neurografica
-                </a>
-                <a href="/work/pepe-rosso" class={dropdownLinkClass(isPepeRosso)}>
-                  Pepe Rosso
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href="/work" class={navLinkClass(isWorkPage)}>
+          Work
+        </a>
 
         <a href="/about" class={navLinkClass(pathname === '/about')}>
         About
