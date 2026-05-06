@@ -1,0 +1,59 @@
+---
+const segments = [
+  {
+    title: 'Saloane de înfrumusețare',
+    text: 'Site-uri clare pentru servicii, echipă, prețuri, portofoliu și programări.',
+  },
+  {
+    title: 'Clinici estetice',
+    text: 'Site-uri care explică procedurile, construiesc încredere și ajută la generarea de leaduri calificate.',
+  },
+  {
+    title: 'Barber shops și frizerii premium',
+    text: 'Site-uri rapide, moderne, cu programare ușoară și prezență locală mai bună.',
+  },
+  {
+    title: 'Nails, lashes, brows, make-up',
+    text: 'Site-uri vizuale, elegante, care transformă portofoliul în cereri de programare.',
+  },
+  {
+    title: 'Spa, wellness și remodelare corporală',
+    text: 'Site-uri care vând experiența, beneficiile și diferențierea business-ului.',
+  },
+];
+---
+
+<section class="beauty-page beauty-bg-dark beauty-section" id="pentru-cine">
+  <div class="beauty-container">
+    <div class="reveal-soft mb-12 max-w-[840px]">
+      <p class="beauty-kicker mb-4">Pentru cine este</p>
+      <h2 class="beauty-heading-lg max-w-[920px]">
+        Pentru business-uri de beauty care vor să pară la fel de profesioniste online cum sunt în realitate
+      </h2>
+    </div>
+
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {segments.map((segment, index) => (
+        <article
+          class={`beauty-card reveal-soft rounded-[26px] p-7 md:p-8 ${
+            index === 1 ? 'beauty-delay-1' : ''
+          } ${index === 2 ? 'beauty-delay-2' : ''} ${
+            index === 3 ? 'beauty-delay-1' : ''
+          } ${index === 4 ? 'beauty-delay-2' : ''}`}
+        >
+          <div class="mb-5 inline-flex h-11 min-w-[44px] items-center justify-center rounded-full bg-[#fff1f6] px-3 text-[14px] font-extrabold text-[#b84f83]">
+            0{index + 1}
+          </div>
+
+          <h3 class="text-[24px] font-extrabold leading-[1.15] tracking-[-0.03em] text-white md:text-[28px]">
+            {segment.title}
+          </h3>
+
+          <p class="mt-4 text-[17px] leading-[1.65] text-white/78 md:text-[18px]">
+            {segment.text}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

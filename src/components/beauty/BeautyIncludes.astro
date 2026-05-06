@@ -1,0 +1,59 @@
+---
+const features = [
+  'Homepage premium',
+  'Pagini individuale pentru servicii',
+  'Pagină echipă',
+  'Galerie rezultate',
+  'Testimoniale',
+  'Prețuri sau pachete',
+  'Întrebări frecvente',
+  'Blog / articole SEO',
+  'Contact rapid',
+  'Formular de programare',
+  'Integrare WhatsApp',
+  'Integrare Google Maps',
+  'Landing pages pentru campanii',
+  'Sistem de rezervări',
+  'Backend pentru administrare',
+];
+---
+
+<section class="beauty-page beauty-section" id="ce-includem">
+  <div class="beauty-container">
+    <div class="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
+      <div class="reveal-soft">
+        <p class="beauty-kicker mb-4">Ce poate include site-ul</p>
+        <h2 class="beauty-heading-lg max-w-[560px]">
+          Fiecare site este construit în funcție de cum funcționează business-ul tău
+        </h2>
+
+        <p class="beauty-text mt-5 max-w-[540px]">
+          Nu toate business-urile au nevoie de aceleași pagini și funcționalități.
+          De aceea începem cu o analiză scurtă și recomandăm doar ce are sens.
+        </p>
+
+        <div class="beauty-card-soft mt-8 p-6">
+          <p class="text-[18px] font-semibold leading-[1.5] text-[#1f1f2a]">
+            Nu toate business-urile au nevoie de toate funcționalitățile.
+            De aceea recomandăm doar ce ajută real imaginea, SEO-ul și programările.
+          </p>
+        </div>
+      </div>
+
+      <div class="reveal-soft beauty-delay-1">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {features.map((feature, index) => (
+            <div class={`beauty-card p-5 ${index % 3 === 1 ? 'beauty-delay-1' : ''} ${index % 3 === 2 ? 'beauty-delay-2' : ''}`}>
+              <div class="flex items-start gap-3">
+                <span class="mt-[8px] h-2 w-2 rounded-full bg-[#cf6ea0]"></span>
+                <p class="text-[16px] font-semibold leading-[1.5] text-[#1f1f2a]">
+                  {feature}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

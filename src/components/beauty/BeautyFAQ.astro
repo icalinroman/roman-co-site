@@ -1,0 +1,55 @@
+---
+const faqs = [
+  {
+    q: 'Cât durează dezvoltarea unui site?',
+    a: 'În funcție de complexitate, un site de prezentare poate fi gata în câteva săptămâni. Un site cu pagini multiple, SEO extins sau sistem de rezervări poate dura mai mult.',
+  },
+  {
+    q: 'Pot avea programări direct în site?',
+    a: 'Da. Putem integra formulare, butoane WhatsApp, calendare de programare sau un sistem custom de rezervări.',
+  },
+  {
+    q: 'Aveți nevoie de poze profesionale?',
+    a: 'Ajută mult, dar nu este obligatoriu pentru început. Putem construi site-ul și cu materiale existente, iar ulterior se pot adăuga imagini mai bune.',
+  },
+  {
+    q: 'Faceți și textele pentru site?',
+    a: 'Da. Putem construi textele astfel încât serviciile să fie explicate clar și să ajute conversia.',
+  },
+  {
+    q: 'Site-ul va fi optimizat pentru Google?',
+    a: 'Da. Structura site-ului, paginile, viteza și textele sunt gândite cu SEO local în minte.',
+  },
+  {
+    q: 'Pot folosi site-ul pentru reclame?',
+    a: 'Da. Putem crea pagini dedicate pentru campanii pe Meta, Google sau TikTok, cu tracking configurat corect.',
+  },
+];
+---
+
+<section class="beauty-page beauty-section" id="faq">
+  <div class="beauty-container">
+    <div class="reveal-soft mb-12 max-w-[760px]">
+      <p class="beauty-kicker mb-4">Întrebări frecvente</p>
+      <h2 class="beauty-heading-lg">
+        FAQ
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((item, index) => (
+        <article class={`beauty-card reveal-soft p-6 md:p-8 ${index === 1 ? 'beauty-delay-1' : ''} ${index === 2 ? 'beauty-delay-2' : ''} ${index === 3 ? 'beauty-delay-1' : ''} ${index === 4 ? 'beauty-delay-2' : ''}`}>
+          <div class="grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
+            <h3 class="text-[22px] font-extrabold leading-[1.25] tracking-[-0.02em] text-[#1f1f2a] md:text-[28px]">
+              {item.q}
+            </h3>
+
+            <p class="beauty-text">
+              {item.a}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

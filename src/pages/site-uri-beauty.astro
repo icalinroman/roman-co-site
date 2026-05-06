@@ -1,0 +1,63 @@
+---
+import ProgramLayout from '../layouts/ProgramLayout.astro';
+import BeautyHero from '../components/beauty/BeautyHero.astro';
+import BeautyProblem from '../components/beauty/BeautyProblem.astro';
+import BeautyAudience from '../components/beauty/BeautyAudience.astro';
+import BeautyWhatWeBuild from '../components/beauty/BeautyWhatWeBuild.astro';
+import BeautyCustomCode from '../components/beauty/BeautyCustomCode.astro';
+import BeautyIncludes from '../components/beauty/BeautyIncludes.astro';
+import BeautyProcess from '../components/beauty/BeautyProcess.astro';
+import BeautyOffer from '../components/beauty/BeautyOffer.astro';
+import BeautyPricing from '../components/beauty/BeautyPricing.astro';
+import BeautyCredibility from '../components/beauty/BeautyCredibility.astro';
+import BeautyFAQ from '../components/beauty/BeautyFAQ.astro';
+import BeautyFinalCTA from '../components/beauty/BeautyFinalCTA.astro';
+---
+
+<ProgramLayout title="Site-uri premium pentru business-uri de beauty">
+  <main>
+    <BeautyHero />
+    <BeautyProblem />
+    <BeautyAudience />
+    <BeautyWhatWeBuild />
+    <BeautyCustomCode />
+    <BeautyIncludes />
+    <BeautyProcess />
+    <BeautyOffer />
+    <BeautyPricing />
+    <BeautyCredibility />
+    <BeautyFAQ />
+    <BeautyFinalCTA />
+  </main>
+
+  <script>
+    const initReveal = () => {
+      const elements = document.querySelectorAll('.reveal-soft');
+
+      if (!elements.length) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -30px 0px',
+        }
+      );
+
+      elements.forEach((el) => observer.observe(el));
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initReveal);
+    } else {
+      initReveal();
+    }
+  </script>
+</ProgramLayout>

@@ -1,0 +1,63 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Analizăm business-ul',
+    text: 'Ne uităm la site-ul actual, Instagram, Google, servicii, competitori și modul în care clienții ajung la programare.',
+  },
+  {
+    number: '02',
+    title: 'Stabilim structura potrivită',
+    text: 'Decidem ce pagini, secțiuni și funcționalități sunt necesare pentru obiectivul tău: imagine, programări, SEO sau campanii plătite.',
+  },
+  {
+    number: '03',
+    title: 'Scriem și proiectăm site-ul',
+    text: 'Construim structura, textele și designul astfel încât site-ul să fie clar, premium și ușor de parcurs.',
+  },
+  {
+    number: '04',
+    title: 'Dezvoltăm site-ul în cod',
+    text: 'Implementăm site-ul cu viteză bună, structură SEO, responsive design și tracking.',
+  },
+  {
+    number: '05',
+    title: 'Lansăm și optimizăm',
+    text: 'Configurăm partea tehnică, testăm formularele, conectăm tool-urile importante și pregătim site-ul pentru trafic.',
+  },
+];
+---
+
+<section class="beauty-page beauty-bg-soft beauty-section" id="proces">
+  <div class="beauty-container">
+    <div class="reveal-soft mb-12 max-w-[860px]">
+      <p class="beauty-kicker mb-4">Procesul de lucru</p>
+      <h2 class="beauty-heading-lg">
+        Un proces clar, fără complicații inutile
+      </h2>
+      <p class="beauty-text mt-5 max-w-[760px]">
+        Ca să iasă bine, un site are nevoie de structură, prioritizare și implementare corectă. De aceea lucrăm în pași foarte clari.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {steps.map((step, index) => (
+        <article class={`beauty-card reveal-soft p-6 md:p-8 ${index === 1 ? 'beauty-delay-1' : ''} ${index === 2 ? 'beauty-delay-2' : ''} ${index === 3 ? 'beauty-delay-1' : ''} ${index === 4 ? 'beauty-delay-2' : ''}`}>
+          <div class="grid gap-5 lg:grid-cols-[90px_280px_1fr] lg:items-start">
+            <div class="text-[26px] font-extrabold tracking-[-0.03em] text-[#b84f83]">
+              {step.number}
+            </div>
+
+            <h3 class="text-[24px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#1f1f2a] md:text-[30px]">
+              {step.title}
+            </h3>
+
+            <p class="beauty-text max-w-[780px]">
+              {step.text}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
