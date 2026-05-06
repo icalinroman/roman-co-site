@@ -386,6 +386,7 @@ body {
     radial-gradient(circle at 100% 10%, rgba(210, 198, 255, 0.22), transparent 26%),
     linear-gradient(180deg, #fffafc 0%, #fffefe 34%, #fbf8ff 100%);
   color: #1f1f2a;
+  overflow-x: clip;
 }
 
 .beauty-container {
@@ -406,6 +407,10 @@ body {
   padding-bottom: 64px;
 }
 
+.beauty-hero-section {
+  padding-top: 132px;
+}
+
 .beauty-kicker {
   font-size: 12px;
   font-weight: 700;
@@ -420,6 +425,7 @@ body {
   letter-spacing: -0.05em;
   font-weight: 800;
   color: #181824;
+  overflow-wrap: anywhere;
 }
 
 .beauty-heading-lg {
@@ -428,6 +434,7 @@ body {
   letter-spacing: -0.04em;
   font-weight: 800;
   color: #181824;
+  overflow-wrap: anywhere;
 }
 
 .beauty-heading-md {
@@ -436,18 +443,21 @@ body {
   letter-spacing: -0.03em;
   font-weight: 800;
   color: #181824;
+  overflow-wrap: anywhere;
 }
 
 .beauty-text-lg {
   font-size: clamp(18px, 2vw, 24px);
   line-height: 1.5;
   color: rgba(31, 31, 42, 0.76);
+  overflow-wrap: anywhere;
 }
 
 .beauty-text {
   font-size: 17px;
   line-height: 1.7;
   color: rgba(31, 31, 42, 0.72);
+  overflow-wrap: anywhere;
 }
 
 .beauty-text-sm {
@@ -614,14 +624,78 @@ body {
 .beauty-delay-3 { transition-delay: 0.24s; }
 
 @media (max-width: 768px) {
+  .beauty-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   .beauty-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .beauty-section-tight {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .beauty-hero-section {
+    padding-top: 112px;
+  }
+
+  .beauty-heading-xl {
+    font-size: clamp(38px, 10.8vw, 56px);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+  }
+
+  .beauty-heading-lg {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+
+  .beauty-heading-md {
+    font-size: clamp(24px, 7vw, 30px);
+    line-height: 1.08;
+  }
+
+  .beauty-text-lg {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .beauty-text {
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  .beauty-text-sm {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .beauty-button-primary,
+  .beauty-button-secondary {
+    width: 100%;
+    min-height: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .beauty-card {
+    border-radius: 20px;
+    padding: 22px !important;
+  }
+
+  .beauty-card-soft {
+    border-radius: 18px;
+    padding: 18px !important;
+  }
+
+  .beauty-kicker {
+    letter-spacing: 0.14em;
   }
 }
 

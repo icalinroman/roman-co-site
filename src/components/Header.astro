@@ -5,19 +5,19 @@ const isWorkPage =
   pathname === '/work' || pathname.startsWith('/work/');
 
 const navLinkClass = (active: boolean) =>
-  `text-[15px] uppercase transition hover:opacity-70 ${
+  `text-[12px] uppercase transition hover:opacity-70 md:text-[15px] ${
     active ? 'font-semibold text-[#2b2b33]' : 'font-medium text-[#2b2b33]/65'
   }`;
 ---
 
 <header class="absolute left-0 top-0 z-50 w-full">
-  <div class="mx-auto flex max-w-[1180px] justify-center px-6 pt-7">
-    <div class="flex h-[58px] w-full max-w-[620px] items-center justify-between rounded-full bg-[#f5f2f2] px-6 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
-      <a href="/" class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[#274690]">
+  <div class="mx-auto flex max-w-[1180px] justify-center px-3 pt-4 md:px-6 md:pt-7">
+    <div class="flex h-[56px] w-full max-w-[620px] items-center justify-between gap-3 rounded-full bg-[#f5f2f2] px-4 shadow-[0_8px_30px_rgba(0,0,0,0.05)] md:h-[58px] md:px-6">
+      <a href="/" class="shrink-0 text-[11px] font-semibold uppercase tracking-[0.1em] text-[#274690] md:text-[12px] md:tracking-[0.18em]">
         Roman&Co.
       </a>
 
-      <nav class="flex items-center gap-8">
+      <nav class="flex min-w-0 items-center gap-3 md:gap-8">
         <a href="/work" class={navLinkClass(isWorkPage)}>
           Work
         </a>
